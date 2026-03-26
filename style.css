@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .nav-item{
+    list-style: none;
+    margin-right: 30px;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .font-primary{
+    color: #424242;
+  }
+  .font-secondary{
+    color: #131313;
+  }
+  .shared_btn{
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+  }
+  .bg-banner{
+    background-color: rgba(255, 144, 14, 0.2);
+  }
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand_name{
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .navbar, .content_section{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .content_section_primary{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .content_section_primary_tittle{
+    font-weight: 700;
+    font-size:4rem;
+  }
+  .content_section img{
+    width: 100%;
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0px;
+    border-radius: 0.5rem;
+  }
+  main{
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+   
+  }
+  main .showcase_gallery{
+    display: flex;
+    margin-top: 50px;
+  }
+  .showcase_gallery_primary{
+   
+    margin: 0 auto;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .showcase_gallery_secondary{
+    max-width: 530px;
+    margin-left: 130px;
+    margin-top: 130px;
+  }
+  @media only screen and (max-width:576px){
+    .navbar, .navlink{
+      flex-direction: column;
+    }
+    main .showcase_gallery{
+      flex-direction:column-reverse;
+    }
+    .showcase_gallery_primary{
+      margin-top: 20px;
+      margin-right: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .showcase_gallery_secondary{
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+  }
